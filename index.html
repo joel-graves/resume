@@ -25,12 +25,13 @@
     skills with contact options."/>
     <style>
       /*Style reset*/
-      body, header, footer, section, h1, p{
+      body, header, footer, section, h1, h2, h3, p, table, tr, td{
         margin: 0;
         padding: 0;
         border: 0;
         font-size: 100%;
       }
+      
       /*Primary styles*/
       body{
         font-family: sans-serif;
@@ -39,6 +40,7 @@
         background-color: #FFFFFF;
         overflow-x: hidden;
       }
+      
       /*Header styles*/
       #titleHeader{
         background: linear-gradient(#2D4671, #5A77A8);
@@ -58,6 +60,38 @@
         font-style: italic;
         padding-top: 10%;
         padding-left: 10%;
+      }
+      
+      /*Section styles*/
+      .sectionBox1{
+        color: #0F1F3A;
+      }
+      .sectionBox2{
+        color: #FFFFFF;
+        background-color: #5A77A8;
+      }
+      .sectionTitle{
+        font-size: 2em;
+        padding-top: 5%;
+        padding-left: 10%;
+      }
+      .sectionContent{
+        padding-top: 2.5%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+        padding-right: 10%;
+      }
+      .listTitle{
+        font-size: 1em;
+        padding-top: 2.5%;
+        padding-left: 10%;
+      }
+      
+      /*Footer style*/
+      footer{
+        text-align: center;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
       }
     </style>
     <script type = "text/javascript">
@@ -80,9 +114,159 @@
       <p id = "headerDesc">Specialising in everything from digital construction to end-user
       support</p>
     </header>
-    <section>
+    <section id = "about" class = "sectionBox1">
+      <h2 id = "aboutTitle" class = "sectionTitle">About</h2>
+      <p id = "aboutPara1" class = "sectionContent">Technical Support Specialist with 6 years of 
+      professional experience providing client-focused technical support for 1000+ users. 
+      Demonstrated ability to identify issue source and provide effective and lasting solutions. 
+      Skilled in a variety of applications and operating systems. Ability and keen interest to 
+      master new technologies very quickly.</p>
     </section>
-    <footer>
+    <section id = "expertise" class = "sectionBox2">
+      <h2 id = "expertiseTitle" class = "sectionTitle">Expertise</h2>
+      <ul id = "expertiseList1" class = "sectionContent">
+        <li>Troubleshooting and issue resolution</li>
+        <li>Training and support (internal and external)</li>
+        <li>Root cause analysis</li>
+        <li>Excellent customer service</li>
+        <li>SDLC participation</li>
+      </ul>
+    </section>
+    <section id = "skills" class = "sectionBox1">
+      <h2 id = "skillsTitle" class = "sectionTitle">IT Skills</h2>
+      <table id = "skillsTable" class = "sectionContent">
+        <tr>
+          <td>Languages</td>
+          <td>HTML, CSS, JavaScript, PHP, SQL</td>
+        </tr>
+        <tr>
+          <td>Operating Systems</td>
+          <td>Windows 10/8/7/Vista/XP, MacOS, Linux</td>
+        </tr>
+        <tr>
+          <td>Applications</td>
+          <td>Microsoft Office, Office 365, Crystal Reports, Adobe Flash/PhotoShop, GIMP, iSeries 
+          Navigator and Communicator, cPanel, Preceda, Internet Explorer, Safari, Edge, Chrome, 
+          TeamViewer, Skype, Norton, Trend Micro and McAfee Antivirus</td>
+        </tr>
+        <tr>
+          <td>Hardware</td>
+          <td>IBM and Apple desktops and laptops, iPads, iPhones, Windows Phones, Android devices, 
+          Printers</td>
+        </tr>
+      </table>
+    </section>
+    <section id = "education" class = "sectionBox2">
+      <h2 id = "educationTitle" class = "sectionTitle">Education</h2>
+      <table id = "educationTable" class = "sectionContent">
+        <tr>
+          <td>Bachelor of Information Technology (RMIT)</td>
+          <td>2013 - 2018 (Term 1)</td>
+        </tr>
+        <tr>
+          <td>HTML Certification (w3Schools)</td>
+          <td>2013</td>
+        </tr>
+        <tr>
+          <td>Certificate IV in Business Administration (TAFESA)</td>
+          <td>2011</td>
+        </tr>
+        <tr>
+          <td>MS Office - Short Courses in MS Excel, Word and Access</td>
+          <td>2007 - 2010</td>
+        </tr>
+        <tr>
+          <td>Certificate III in Business (TAFESA)</td>
+          <td>2008</td>
+        </tr>
+        <tr>
+          <td>Certificate II in Information Technology (TAFESA)</td>
+          <td>2007</td>
+        </tr>
+        <tr>
+          <td>SACE (Year 12) at Hallett Cove R-12 School</td>
+          <td>2002</td>
+        </tr>
+      </table>
+    </section>
+    <section id = "employment" class = "sectionBox1">
+      <h2 id = "employmentTitle" class = "sectionTitle">Employment</h2>
+      <h3 class = "listTitle">Systems Application Consultant at ELMO Talent Management - (2017)</h3>
+      <ul class = "sectionContent">
+        <li>Support end-users with the operation and configuration of the SaaS ELMO Talent 
+        Management Software suite (HR software)</li>
+        <li>SDLC participation</li>
+        <li>Knowledgebase maintenance (Confluence)</li>
+        <li>Technical and end-user documentation authoring</li>
+        <li>Debugging ASP and JavaScript</li>
+        <li>Querying and updating MSSQL databases</li>
+        <li>Achievements:</li>
+        <ul>
+          <li>Built custom support request portal from scratch in Javascript</li>
+        </ul>
+      </ul>
+      <h3 class = "listTitle">IT Helpdesk at General Pants Group - (2016 to 2017)</h3>
+      <ul class = "sectionContent">
+        <li>General IT support for 80 stores and head office</li>
+        <li>MS Active Directory user and computer maintenance</li>
+        <li>POS software troubleshooting</li>
+        <li>Connectivity and communication analysis</li>
+        <li>eCommerce process troubleshooting</li>
+        <li>Knowledgebase maintenance (Confluence)</li>
+        <li>Achievements:</li>
+        <ul>
+          <li>Massive updates to existing Knowledgebase to improve knowledge transfer amongst IT 
+          staff</li>
+          <li>30+ new stores (en masse POS roll-out)</li>
+        </ul>
+      </ul>
+      <h3 class = "listTitle">Level 2 Helpdesk at NGAHR/Neller Software - (2015 to 2016)</h3>
+      <ul class = "sectionContent">
+        <li>Advanced Preceda cloud-based application support for 1000+ users</li>
+        <li>Provide thorough and professional customer support</li>
+        <li>Browser behaviour analysis (script errors and network tracing)</li>
+        <li>Use SQL as a reporting and database repair tool</li>
+        <li>Debug JavaScript, RPG and LANSA code</li>
+        <li>Point of escalation for Level 1 Helpdesk staff</li>
+        <li>Train staff members and document procedures</li>
+        <li>After-hours support (on call)</li>
+        <li>Achievements:</li>
+        <ul>
+          <li>Automation of IBM iSeries system error alerts</li>
+          <li>Custom SQL scripting to fix common software bugs</li>
+          <li>NGA Hero Award for internal staff training</li>
+        </ul>
+      </ul>
+      <h3 class = "listTitle">Level 1 Helpdesk at NGAHR/Neller Software - (2013 to 2015)</h3>
+      <ul class = "sectionContent">
+        <li>Preceda cloud-based application support for 1000+ users</li>
+        <li>Provide thorough and professional customer support</li>
+        <li>Assistance via remote desktop connection</li>
+        <li>Use of ticketing system (SalesForce)</li>
+        <li>Script error analysis</li>
+        <li>Achievements:</li>
+        <ul>
+          <li>Created helpdesk intranet site to unify procedures and documentation</li>
+          <li>Created PHP Preceda Compatibility Wizard for end-users</li>
+          <li>NGA Hero Award for outstanding customer service</li>
+        </ul>
+      </ul>
+      <h3 class = "listTitle">Network/Website Administrator at SA AllTools - (2011 to 2013)</h3>
+      <ul class = "sectionContent">
+        <li>Network and email system administration</li>
+        <li>eCommerce website administration and modification</li>
+        <li>Support legacy power-tool diagnostic devices</li>
+        <li>End-user and desktop support</li>
+        <li>Internal staff training</li>
+        <li>Customer service</li>
+        <li>Achievements:</li>
+        <ul>
+          <li>Built successful eCommerce website from scratch</li>
+          <li>Built head office network infrastructure from scratch</li>
+        </ul>
+      </ul>
+    </section>
+    <footer id = "footer" class = "sectionBox2">
       <p>&copy; 2017, Joel Graves</p>
     </footer>
   </body>

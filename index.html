@@ -6,7 +6,9 @@
   Description: 
   This is a single-page website designed from a mobile-first perspective to serve as 
   my online resume. It showcases my basic design and development skills. This project was planned 
-  using Trello project management tools and developed on GitHub.
+  using Trello project management tools and developed on GitHub. For potential analysis purposes, 
+  this website has been purposely designed so that all elements of the page (scripting, CSS and 
+  page structure) are included in the one file (index.html).
   Notes: 
   This site uses the following colour palette:
   Lightest blue - ABC9FB
@@ -34,7 +36,7 @@
         font-family: sans-serif;
         font-size: 16px;
         color: #FFFFFF;
-        background-color: #2D4671;
+        background-color: #FFFFFF;
         overflow-x: hidden;
       }
       /*Header styles*/
@@ -43,9 +45,19 @@
       }
       #headerName{
         font-size: 2em;
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-bottom: 10%;
       }
       .headerTitle{
         font-size: 2.5em;
+        padding-left: 10%;
+      }
+      #headerDesc{
+        font-size: 1.5em;
+        font-style: italic;
+        padding-top: 10%;
+        padding-left: 10%;
       }
     </style>
     <script type = "text/javascript">
@@ -60,11 +72,13 @@
       }
     </script>
   </head>
-  <body onload = "resizeHeader()">
+  <body onload = "resizeHeader()" onresize = "resizeHeader()">
     <header id = "titleHeader">
       <h1 id = "headerName">Joel Graves</h1>
       <p id = "headerTitle1" class = "headerTitle">Full Stack Web Developer</p>
       <p id = "headerTitle2" class = "headerTitle">Technical Support Guru</p>
+      <p id = "headerDesc">Specialising in everything from digital construction to end-user
+      support</p>
     </header>
     <section>
     </section>

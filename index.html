@@ -48,17 +48,20 @@
       #headerName{
         font-size: 2em;
         padding-top: 5%;
+        padding-right: 10%;
         padding-left: 10%;
         padding-bottom: 10%;
       }
       .headerTitle{
         font-size: 2.5em;
+        padding-right: 10%;
         padding-left: 10%;
       }
       #headerDesc{
         font-size: 1.5em;
         font-style: italic;
         padding-top: 10%;
+        padding-right: 10%;
         padding-left: 10%;
       }
       
@@ -73,17 +76,19 @@
       .sectionTitle{
         font-size: 2em;
         padding-top: 5%;
+        padding-right: 10%;
         padding-left: 10%;
       }
       .sectionContent{
         padding-top: 2.5%;
         padding-left: 10%;
-        padding-bottom: 5%;
+        padding-bottom: 2.5%;
         padding-right: 10%;
       }
       .listTitle{
         font-size: 1em;
-        padding-top: 2.5%;
+        padding-top: 1%;
+        padding-right: 10%;
         padding-left: 10%;
       }
       
@@ -95,12 +100,23 @@
       }
     </style>
     <script type = "text/javascript">
+      /*Risizes the top section of the page depending on the width and height of the window.*/
       function resizeHeader(){
-        var header, winW, winH, px;
+        var page, header, winW, winH, px;
+        /*Get the body and header element and the window width and height.*/
+        page = document.getElementsByTagName("body")[0];
         header = document.getElementById("titleHeader");
         winW = window.innerWidth;
         winH = window.innerHeight;
         px =  "px";
+        /*If the window width is less than the height, lower the font size.*/
+        if(winW < winH){
+          page.style.fontSize = "10px";
+        }
+        else{
+          page.style.fontSize = "16px";
+        }
+        /*Resize the header tag dimensions.*/
         header.style.width = winW + px;
         header.style.height = winH + px;
       }
